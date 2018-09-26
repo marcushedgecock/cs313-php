@@ -1,0 +1,30 @@
+#firstDiv {
+	font-size: 20;
+	background-color: lightblue;
+	text-align: center;
+}
+
+#secondDiv {
+	font-size: 20;
+	background-color: lightblue;
+	text-align: center;
+}
+
+#thirdDiv {
+	font-size: 20;
+	background-color: lightblue;
+	text-align: center;
+}
+
+#firstDiv:hover {
+	font-weight: bold;
+}
+
+#secondDiv:hover {
+	font-weight: bold;
+}
+
+#thirdDiv:hover {
+	font-weight: bold;
+}
+

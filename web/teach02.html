@@ -1,0 +1,80 @@
+<!doctype HTML>
+<head>
+	<meta charset="UTF-8">
+	<title>
+		02 Teach: Team Activity
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="teach02.css">
+	<script src="teach02.js"></script>
+</head>
+<html>
+<body>
+
+	<h1>02 Teach Core Requirements</h1>
+	
+	<br/>
+
+	<div class="container">
+		<div class="row">
+			<div id="firstDiv" class="col border">
+				First Div
+			</div>
+			<div id="secondDiv" class="col border">
+				Second Div
+			</div>
+			<div id="thirdDiv" class="col border">
+				Third Div
+			</div>
+		</div>
+	</div>		
+			
+			<br/>
+	
+	<button type="button" onclick="buttonClicked()">
+		Click Me
+	</button>
+	
+	<br/>
+	
+	<form onsubmit="changeColor(); return false;">
+		<input type="text" id="colorInput" value="red">
+		<input type="submit" value="Change color">
+	</form>
+	
+	<p>The "Change color" button only changes the color of the first div per the instructions</p>
+	
+	<br/>
+	<hr/>
+	<br/>
+	
+	<h1>02 Teach Stretch Goal: jQuery background color change</h1>
+	
+	<form onsubmit="changeColorJQuery()">
+		<input type="text" id="colorInput2" value="red">
+		<input type="submit" id="colorChanger2" value="Change color">
+	</form>
+	
+	<p>The "Change color" button only changes the color of the first div</p>
+	
+	<br/><br/>
+	
+	<h1>02 Teach Stretch Goal: jQuery third div fade out</h1>
+	
+	<button id="button2">
+		Fade In/Fade Out
+	</button>
+	
+	<br/><br/><br/>
+	
+	<h1>02 Teach Stretch Goal: use bootstrap</h1>
+	<p>I had to install boostrap locally in order to get it to work</p>
+	
+<footer>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</footer>	
+</body>	
+</html>
