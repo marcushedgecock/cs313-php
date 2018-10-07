@@ -27,13 +27,13 @@ if (isset ($_POST['garyBusey4'])) {
 
 <h1>These are the items you have in your cart</h1>
 
-<p id="bold">Gary Busey 1</p>
+<p id="bold">Gary Busey 1 photo</p>
 <p><?php echo "Quantity: " . $_SESSION['garyBusey1']; ?> </p>
-<p id="bold">Gary Busey 2</p>
+<p id="bold">Gary Busey 2 photo</p>
 <p><?php echo "Quantity: " . $_SESSION['garyBusey2']; ?> </p>
-<p id="bold">Gary Busey 3</p>
+<p id="bold">Gary Busey 3 photo</p>
 <p><?php echo "Quantity: " . $_SESSION['garyBusey3']; ?> </p>
-<p id="bold">Gary Busey 4</p>
+<p id="bold">Gary Busey 4 photo</p>
 <p><?php echo "Quantity: " . $_SESSION['garyBusey4']; ?> </p>
 
 <form action="checkout.php" method="post">

@@ -1,0 +1,13 @@
+iframe {
+	width: 256;
+	height: 150;
+}
+
+#center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#bold {
+	font-weight: bold;
+}

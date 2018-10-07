@@ -1,5 +1,17 @@
 <?php
 session_start();
+if (isset ($_POST['garyBusey1'])) {
+	$_SESSION['garyBusey1'] = $_POST['garyBusey1'];
+}	
+if (isset ($_POST['garyBusey2'])) {
+	$_SESSION['garyBusey2'] = $_POST['garyBusey2']; 
+}
+if (isset ($_POST['garyBusey3'])) {
+	$_SESSION['garyBusey3'] = $_POST['garyBusey3']; 
+}
+if (isset ($_POST['garyBusey4'])) {
+	$_SESSION['garyBusey4'] = $_POST['garyBusey4']; 
+}
 ?>
 <!DOCTYPE HTML>
 <html lang="en">

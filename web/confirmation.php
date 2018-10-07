@@ -51,13 +51,13 @@ if (isset ($_POST['zipCode'])) {
 <p><?php echo $_SESSION['zipCode']; ?> </p>
 
 <h1>Your Items Purchased:</h1>
-<p id="bold">Gary Busey 1:</p>
+<p id="bold">Gary Busey 1 photo:</p>
 <p><?php echo $_SESSION['garyBusey1']; ?> </p>
-<p id="bold">Gary Busey 2:</p>
+<p id="bold">Gary Busey 2 photo:</p>
 <p><?php echo $_SESSION['garyBusey2']; ?> </p>
-<p id="bold">Gary Busey 3:</p>
+<p id="bold">Gary Busey 3 photo:</p>
 <p><?php echo $_SESSION['garyBusey3']; ?> </p>
-<p id="bold">Gary Busey 4:</p>
+<p id="bold">Gary Busey 4 photo:</p>
 <p><?php echo $_SESSION['garyBusey4']; ?> </p>
 
 <h1>Thank you for your purchase!</h1>
