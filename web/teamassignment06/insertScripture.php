@@ -21,8 +21,7 @@ catch (PDOException $ex)
   echo 'Error!: ' . $ex->getMessage();
   die();
 } 
-$id = htmlspecialchars($_GET['id']);
-$stmt = $db->prepare('SELECT name, id FROM Topic');
+$stmt = $db->prepare('SELECT id,name FROM Topic');
 $stmt->execute(array());
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -32,16 +31,15 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <title>insert scripture</title>
  </head>
  <body>
- <form action="" method="post">
+ <form action="handleInsert.php" method="post">
  Book: <input type="text" name="book"><br/>
  Chapter: <input type="text" name="chapter"><br/>
  Verse: <input type="text" name="verse"><br/>
  Content: <textarea name="content"></textarea><br/>
  <?php foreach ($rows as $row) : ?>
-	 <?php echo $row['name']; ?>: <input type="checkbox" name="topic[]" value="<?= $row['id']; ?>" />
+	 <?php echo $row['name']; ?>: <input type="checkbox" name="topics[]" value="<?= $row['id']; ?>" />
  <?php endforeach; ?>
  <input type="submit">
  </form>
- <?php echo '<p>Hello World</p>'; ?> 
  </body>
 </html>
