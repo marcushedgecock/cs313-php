@@ -22,10 +22,9 @@ catch (PDOException $ex)
   die();
 } 
 $id = htmlspecialchars($_GET['id']);
-$stmt = $db->prepare('SELECT topic, id FROM Topic');
+$stmt = $db->prepare('SELECT name, id FROM Topic');
 $stmt->execute(array());
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-var_dump($rows);
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,7 +38,7 @@ var_dump($rows);
  Verse: <input type="text" name="verse"><br/>
  Content: <textarea name="content"></textarea><br/>
  <?php foreach ($rows as $row) : ?>
-	 <?php echo $row['topic']; ?>: <input type="checkbox" name="topic[]" value="<?= $row['id']; ?>" />
+	 <?php echo $row['name']; ?>: <input type="checkbox" name="topic[]" value="<?= $row['id']; ?>" />
  <?php endforeach; ?>
  <input type="submit">
  </form>
