@@ -28,7 +28,7 @@ VALUES (:book, :chapter, :verse, :content)');
 $stmt->execute(array(":book" => $book, ":chapter" => $chapter, ":verse" => $verse
 ,":content" => $content));
 
-$scriptureId = $pdo->lastInsertId('scriptures_id_seq');
+$scriptureId = $db->lastInsertId('scriptures_id_seq');
 $linkInsertStmt = $db->prepare("INSERT INTO Link(scriptureid, topicid)
 VALUES(
 	:scriptureId ,:id
