@@ -25,6 +25,7 @@ $id = htmlspecialchars($_GET['id']);
 $stmt = $db->prepare('SELECT topic, id FROM Topic');
 $stmt->execute(array());
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+var_dump($rows);
 ?>
 <!DOCTYPE html>
 <html>
