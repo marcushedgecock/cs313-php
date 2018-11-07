@@ -8,9 +8,27 @@
 	<link rel="shortcut icon" type="image/png" 
 			href="https://i.pinimg.com/originals/55/18/16/5518164a4945b7640c22c8c02c12e43a.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="project.css">
   </head>
   <body>
-    <h1>Hello</h1>	
+	<div id="header">
+		<br/><br/><h1>
+			1st Ward Sunday School
+		</h1><br/><br/>
+	</div>
+    <div class="container">
+		<div class="row">
+			<div class="col-sm" id="col1">
+				sign in
+			</div>
+			<div class="col-sm" id="col2">
+				
+			</div>
+			<div class="col-sm" id="col3">
+				
+			</div>
+		</div>
+	</div>	
 	
 	
     
